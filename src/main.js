@@ -1,13 +1,13 @@
-import plugin from '../plugin.json';
+import plugin from 'plugin.json'
+
 
 class AcodePlugin {
-
   async init() {
-
+    acode.alert('Plugin Initialized', `The ${plugin.name} plugin has been initialized.`);
   }
 
   async destroy() {
-
+    acode.alert('Plugin Unmounted', `The ${plugin.name} plugin has been unmounted.`);
   }
 }
 
